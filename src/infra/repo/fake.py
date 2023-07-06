@@ -13,7 +13,7 @@ class FakerRepo:
                 new_user = Users(name="Luizera", password="Fallen")
                 db_connection.session.add(new_user)
                 db_connection.session.commit()
-            except:
+            except Exception:
                 db_connection.session.rollback()
                 raise
             finally:
