@@ -16,6 +16,7 @@ repos:
       name: pytest
       language: system
       entry: pytest -v
+      always_run: true
       pass_filenames: false
       stages: [commit]
   - repo: local
