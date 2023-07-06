@@ -23,5 +23,4 @@ class UserRepository:
                 db_connection.session.rollback()
                 raise
             finally:
-                db_connection.session.close()
-                
+                    db_connection.session.close()
