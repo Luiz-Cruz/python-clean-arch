@@ -22,6 +22,6 @@ def test_insert_user():
         ).fetchone()
 
        
-        assert new_user.id == 10
+        assert new_user.id == query_user.id
         assert new_user.name == query_user.name
         assert new_user.password == query_user.password
