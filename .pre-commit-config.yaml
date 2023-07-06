@@ -11,13 +11,13 @@ repos:
       - id: flake8
         stages: [commit]
   - repo: local
-    hooks:
-      - id: pytest
-        name: pytest
-        language: system
-        entry: pytest -v
-        pass_filenames: false
-        stages: [commit]
+  hooks:
+    - id: pytest
+      name: pytest
+      language: system
+      entry: pytest -v
+      pass_filenames: false
+      stages: [commit]
   - repo: local
     hooks:
       - id: requirements
